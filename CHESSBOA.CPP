@@ -1,0 +1,51 @@
+#include<conio.h>
+#include<iostream.h>
+#include<math.h>
+#include<graphics.h>
+void main()
+{
+clrscr();
+cout<<"Enter the side of square:";
+int i,j,len,stat,k,l,col,x,y;
+x=0;
+y=0;
+cin>>len;
+clrscr();
+int gd,gm;
+detectgraph(&gd,&gm);
+initgraph(&gd,&gm,"c:\\tc\\bgi");
+col=3;
+for(i=1;i<=8;i++)
+{
+	for(j=1;j<=8;j++)
+	{
+		for(k=1;k<=len;k++)
+		{
+		    for(l=1;l<=len;l++)
+		    {
+			putpixel(x+l,y+k,col);
+		    }
+		}
+		 if(col==3)
+		{
+			col=4;
+		}
+		else
+		{
+		col=3;
+		}
+	  x=x+len;
+	 }
+	 y=y+len;
+	 x=0;
+if(col==3)
+		{
+			col=4;
+		}
+		else
+		{
+		col=3;
+		}
+}
+getch();
+}

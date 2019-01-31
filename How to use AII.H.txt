@@ -1,0 +1,52 @@
+functions:
+1) realpoint(int i ,float x,float y,float z): 
+to add the points in directly without propmt
+int: point no.
+
+
+2) reset()
+to reset the point matrix after every operation
+
+3) display(float a, float b)
+
+a=     1=front view :: 2= side view:: 3=top view 
+b =    1=join by line  :: 2= directly draw a point cloud
+
+4) iso()
+
+generates isometric view
+
+5) rotate(float a,float b)
+a = 1: about z axis :: 2=about x axis :: 3=about y axis
+b = angle in DEGREE
+
+6) translat(float x,float y,float z)
+translate the object
+
+7) mirror(float a)
+mirror 
+a=1 abt x axis
+a= 2 abt y xis
+a= 3 abt z axis
+
+8) shear(float a,float b)
+a = in which direction values same as above
+b = shearing factor
+
+
+9) scale(float a,float b)
+same as bove but for scaling
+
+
+10) takpoint()
+manual one after another inpit of point with prompt to user. use for 3D object joined by streight line
+
+11) void startgraph()
+to initialise graphics
+
+
+12) ******important*******
+create object of class transform with number of points as parameter.
+e.g.
+transfrom m(100);
+means m is object now with 100 points in it to operate with.
